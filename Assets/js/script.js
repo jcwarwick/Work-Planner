@@ -29,11 +29,12 @@ $(document).ready(function () {
       timeBlockEl.removeClass("future")
       timeBlockEl.addClass("past");
     } else if (blockHour === currentDate.hour()) {
-      timeBlockEl.removeClass("past")
+      timeBlockEl.removeClass("past");
+      timeBlockEl.removeClass("future")
       timeBlockEl.addClass("present");
     } else {
-      timeBlockEl.removeClass("present")
-      timeBlockEl.removeClass("past")
+      timeBlockEl.removeClass("present");
+      timeBlockEl.removeClass("past");
       timeBlockEl.addClass("future");
     }
 
